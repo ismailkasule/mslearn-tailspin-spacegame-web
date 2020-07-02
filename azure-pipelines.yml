@@ -16,7 +16,8 @@ pool:
                                   displayName: 'Use .NET Core SDK 3.1.300'
                                     inputs:
                                                 packageType: sdk
-                                                    version: 3.0.x
+                                                    version: 3.1.x
+                                                    includePreviewVersions: true
 
                               - task: Npm@1
                                   displayName: 'Run npm install'
