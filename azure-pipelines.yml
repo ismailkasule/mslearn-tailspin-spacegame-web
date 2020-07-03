@@ -11,10 +11,6 @@ pool:
 variables:
   buildConfiguration: 'Release'
   Steps:
-          - task: UseDotNet@2
-            displayName: 'User .NET Core SDK 3.1.300'
-            inputs:
-                    packageType: sdk
           - task: Npm@1
             displayName: 'Run npm install'
             inputs:
