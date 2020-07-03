@@ -12,7 +12,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   
-Steps:
+steps:
         - task: UseDotNet@2
           displayName: 'Use'
           inputs:
