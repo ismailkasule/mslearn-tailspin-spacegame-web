@@ -16,3 +16,7 @@ variables:
             inputs:
                     PackageType: sdk
                     version: 3.1.300
+          - task: Npm@1
+            displayName: 'Run npm install'
+            inputs:
+                    verbose: false
