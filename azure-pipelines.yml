@@ -10,12 +10,12 @@ pool:
                       - npm
             variables:
                       buildConfiguration: 'Release'
-                      steps:
-                              - task: UseDotNet@2
-                                  displayName: 'Use .NET Core SDK 3.1.300'
+steps:
+        - task: UseDotNet@2
+            displayName: 'Use .NET Core SDK 3.1.300'
                                     inputs:
                                                 packageType: sdk
-                                                    version: 2.1.x
+                                                    version: 3.1.300
                                                     includePreviewVersions: true
 
                               - task: Npm@1
