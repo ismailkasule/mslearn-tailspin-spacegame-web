@@ -7,7 +7,7 @@ pool:
    vmImage: 'ubuntu-18.04'
    demands:
          - npm
-         - npm install -g node-sass
+
    variables:
      buildConfiguration: 'Release'
      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
@@ -27,6 +27,11 @@ steps:
       displayName: 'Run npm install'
       inputs:
         verbose: false
+
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '6.x' 
+        checkLatest: false # Optional
 
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
