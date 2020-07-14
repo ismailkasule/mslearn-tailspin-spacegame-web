@@ -6,8 +6,8 @@
     "gulp-uglify": "3.0.0",
     "node-sass": "^4.14.1",
     "rimraf": "2.6.1"
-  }
-},
+  },
 "scripts" : {
 	    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+}
 }
