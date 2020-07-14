@@ -24,11 +24,6 @@ steps:
         Display name: Fix 'node-sass' not found error
         Script: npm i
 
-    - task: CmdLine@2 
-      inputs: 
-        Display name: Fix 'node-sass' not found error
-        Script: npm run node-sass
-
     - task: Npm@1
       displayName: 'Run npm install'
       inputs:
