@@ -23,6 +23,11 @@ steps:
       inputs:
         versionSpec: '5.6.0' 
 
+    - task: CmdLine@2 
+      inputs: 
+        Display name: Fix 'node-sass' not found error
+        Script: npm install --save-dev --unsafe-perm node-sass
+
     - task: Npm@1
       displayName: 'Run npm install'
       inputs:
