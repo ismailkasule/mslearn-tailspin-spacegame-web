@@ -27,7 +27,7 @@ steps:
     - task: CmdLine@2 
       inputs: 
         Display name: Fix 'node-sass' not found error
-        Script: yarn global add node-sass
+        Script: npm run node-sass
 
     - task: Npm@1
       displayName: 'Run npm install'
